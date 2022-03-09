@@ -2,13 +2,21 @@ import React from 'react'
 import AppContainer from './components/AppContainer'
 import TodoInput from './components/TodoInput'
 import AppRow from './components/AppRow'
+import TodoAppHeader from './components/TodoAppHeader'
+import TodoItem from './components/TodoItem'
 
 function App() {
+  // const dummyItems = new Array(6)
   return (
     <main>
       <AppContainer>
         <AppRow>
+          <TodoAppHeader />
           <TodoInput />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem/>
+          <TodoItem/>
         </AppRow>
       </AppContainer>
     </main>
